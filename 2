@@ -1,0 +1,59 @@
+#include <iostream>
+
+using namespace std;
+
+class Circle
+{
+private:
+    float r;
+    int x;
+    int y;
+public:
+    Circle();
+    Circle(float a,int b,int c);
+    void setR(float a);
+    float getR();
+    void setX(int a);
+    int getX();
+    void setY(int a);
+    int getY();
+    float Area();
+    void info();
+
+
+};
+ Circle :: Circle()
+    {
+        r=0;
+        x=0;
+        y=0;
+    }
+    Circle :: Circle (float a, int a, int b)
+    {
+        r=a;
+        x=b;
+        y=c;
+    }
+    void Circle :: setR(float a)
+    {
+        r=a;
+
+    }
+    float Circle :: getR()
+    {
+        return r;
+    }
+    
+    float Circle :: Area()
+    {
+        return r*r*3.14115;
+    }
+    void info()
+    {
+        cout<<"x="<<x<<"y="<<y<<"r="<<r<<endl;
+    }
+int main()
+{
+
+    return 0;
+}
