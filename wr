@@ -1,0 +1,80 @@
+#include <iostream>
+
+using namespace std;
+
+class Box
+{
+private:
+    int a;
+    int b;
+    int c;
+    string name;
+public:
+    Box()
+    Box(int _a,int _b, int_c);
+    void setA(int p);
+    int getA();
+    void setB(int p);
+    int getB();
+    void setC(int p);
+    int getC();
+    void setName(string p);
+    int getName();
+    int Volume();
+    int Area();
+   void info();
+   Box::Box()
+   {
+       a=0;
+       b=0;
+       c=0;
+       
+   }
+    Box::Box(int _a,int _b,int _b)
+    {
+        a=_a;
+        b=_b;
+        c=_c;
+        
+    }
+    void Box::setA(int p);
+    {
+        a=p;
+    }
+    int Box::getA()
+    {
+        return a;
+    }
+    {
+        int Box::Volume()
+        return(a*b*c);
+        
+    }
+    int Box::Area();
+    {
+        return 2*(a*b+a*c+b*c);
+    }
+    void Box::info()
+    {
+        cout<<"Box:"<<name<<endl;
+        cout<<"a:"<<a<<endl;
+        cout<<"b:"<<b<<endl;
+        cout<<"c:"<<c<<endl;
+        cout<<"V:"<< Volume()<<endl;
+        cout<<"S:"<< Area()<<endl;
+    }
+    
+};
+int main()
+{
+    Box b1,b2(3,8,16,"UKTC");
+    b1.info();
+    b2.info();
+    if(b1.Volume()>b2.Volume())
+    {
+        cout<<b1.Volume()<<"is bigger";
+    }
+    else 
+        cout<<b2.Volume()<<"is bigger";
+    return 0;
+}
